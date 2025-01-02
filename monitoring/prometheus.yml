@@ -1,0 +1,8 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'health-check-service'
+    static_configs:
+      - targets: ['health-check-service:3001']
+
